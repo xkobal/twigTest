@@ -1,1 +1,10 @@
-{{ Post.getTitle }}
+<html>
+    <head>
+        <title>{{ Post.getTitle }}</title>
+    </head>
+    <body>
+        {{ Post.getBody }}
+        {{ Post.getBody|lower }}
+        {{ Post.getBody(Post.getTitle) }}
+    </body>
+</html>

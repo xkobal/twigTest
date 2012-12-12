@@ -11,7 +11,7 @@ $env = new Twig_Environment($loader);
 //    array('Post', 'getBody')
 //)));
 
-$tpl = $env->render('theme.twig', array('Post' => new Post()));
+$tpl = $env->render('bench.twig', array('Post' => new Post()));
 
 class Post
 {
@@ -24,7 +24,7 @@ class Post
 $t = microtime(true);
 
 for ($i = 0; $i < 10000; $i++) {
-    $tpl = $env->render('theme.twig', array('Post' => new Post()));
+    $tpl = $env->render('bench.twig', array('Post' => new Post()));
 }
 
 $t = microtime(true) - $t;
