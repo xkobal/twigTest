@@ -44,8 +44,6 @@ class MethodCallOptimizerNodeVisitor implements \Twig_NodeVisitorInterface
         }
 
         return new MethodCallNode($name, $attr, $args, $node->getLine());
-
-        return $node;
     }
 
     public function leaveNode(\Twig_NodeInterface $node, \Twig_Environment $env)
