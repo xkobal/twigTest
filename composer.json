@@ -1,0 +1,12 @@
+{
+    "name": "overblog/twig-poc",
+    "require": {
+        "twig/twig": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Overblog": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}
